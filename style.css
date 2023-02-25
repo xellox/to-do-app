@@ -23,18 +23,29 @@
     position: relative;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-.textinput{
+#textinput{
     height: 40px;
+    max-width:300px;
     border-radius: 20px;
-    border:1px solid white;
+    border:2px solid white;
     margin-right: 10px;
+    padding:7px;
+    font-size: 26px;
 }
 
 .submitbutton{
-    width:20px;
-    height:20px;
+    width:40px;
+    height:40px;
+    border-radius: 20px;
+    background-color: rgb(62, 176, 242);
+    font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-items:center
+
 }
 
 i, a{
@@ -52,7 +63,10 @@ i, a{
 .contentList{
 display:flex;
 position:relative;
-justify-content: center;
-align-items: center;
+}
 
+
+.divList{
+    display:flex;
+    justify-content: center;
 }
