@@ -47,7 +47,8 @@
 
 #textinput{
     height: 40px;
-    max-width:300px;
+    width:300px;
+    min-width: 150px;
     border-radius: 20px;
     border:1px solid black;
     box-shadow: 2px 2px 5px  0 black;
@@ -91,6 +92,7 @@
 .removebutton:hover{
     color:rgb(215, 10, 10);
     text-shadow: 1px 1px black;
+    box-shadow:  1px 1px 3px 0 rgb(15, 15, 15);
 }
 
 .checkbutton{
@@ -114,7 +116,7 @@
 .checkbutton:hover{
     color:rgb(57, 205, 47);
     text-shadow:1px 1px  black;
-    box-shadow:  2px 2px 5px 0 rgb(15, 15, 15);
+    box-shadow:  1px 1px 3px 0 rgb(15, 15, 15);
 }
 
 /* style new list elements */
@@ -128,14 +130,14 @@ position:relative;
 .divList{
     display:flex;
     justify-content: center;
-    margin:20px 0 0 45px ;
+    margin:20px 0 0 30px ;
     animation-name: appear;
     animation-duration: 0.3s;
 }
 
 li{
     width:280px;
-    min-width:240px;
+    min-width:150px;
     font-size:20px;
     color:black;
     border-bottom: 1px solid black;
@@ -151,13 +153,15 @@ li{
     }
     100%{
         opacity: 1;
-        margin-left: 45px;
+        margin-left: 30px;
     }
 }
 
 .divListRemove{
     animation-name: dissapear;
     animation-duration: 400ms;
+    z-index: -5;
+    
 }
 
 @keyframes dissapear {
@@ -167,6 +171,20 @@ li{
 
     100%{
         opacity:0;
-        margin-left:800px;
+        margin-left:200px;
+    }
+}
+
+@media (max-width:600px) {
+
+    @keyframes dissapear {
+        0%{
+            opacity:1;
+        }
+    
+        100%{
+            opacity:0;
+            margin-left:80px;
+        }
     }
 }

@@ -30,7 +30,7 @@ textinput.value =''
 // remove task item button function ,sync the fade animation with the remove func//
     function removeFunction(){
         divList.classList.add('divListRemove')
-        setTimeout(() => divList.remove(), 400)    
+        setTimeout(() => divList.remove(), 300)    
     }
 
 // check task item button function// 
