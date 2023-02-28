@@ -15,11 +15,6 @@
     right:0;
 }
 
- i, a{
-    list-style-type: none;
-    text-decoration: none;
-}
-
 /* center title + submit bar */
 .contentbox{
     margin-top:70px;
@@ -33,15 +28,15 @@
     margin-bottom: 100px;
     text-transform: uppercase;
     font-family: sans-serif;
-    color:snow;
+    color:White;
     text-shadow:4px 4px black
 }
+
 .inputbar {
     display:flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    text-align: center;
     margin-bottom:40px;
 }
 
@@ -61,8 +56,8 @@
 .submitbutton{
     width:40px;
     height:40px;
-    border-radius: 20px;
-    background-color:snow;
+    border-radius: 30px;
+    background-color:white;
     font-size: 50px;
     display:flex;
     margin:5px;
@@ -74,9 +69,8 @@
 .removebutton{
     width:35px;
     height:35px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: rgb(164, 240, 254);
-    font-size: 50px;
     color:rgb(215, 10, 10);
     display:flex;
     justify-content: center;
@@ -98,10 +92,9 @@
 .checkbutton{
     width:35px;
     height:35px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: rgb(164, 240, 254);
     color:rgb(57, 205, 47);
-    font-size: 50px;
     display:flex;
     justify-content: center;
     align-items:center;
@@ -120,12 +113,6 @@
 }
 
 /* style new list elements */
-.contentList{
-display:flex;
-position:relative;
-
-}
-
 
 .divList{
     display:flex;
@@ -139,11 +126,8 @@ li{
     width:280px;
     min-width:150px;
     font-size:20px;
-    color:black;
     border-bottom: 1px solid black;
-    list-style-type:disc;
     font-weight: 600;
-    
 }
 
 @keyframes appear {
@@ -159,9 +143,7 @@ li{
 
 .divListRemove{
     animation-name: dissapear;
-    animation-duration: 400ms;
-    z-index: -5;
-    
+    animation-duration: 400ms;    
 }
 
 @keyframes dissapear {
